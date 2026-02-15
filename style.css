@@ -8,38 +8,41 @@ body {
 
 canvas { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; }
 
-/* Neon Header */
+/* Neon Header (soft kedap-kedip) */
 .neon-text {
   font-size: 60px;
-  color: #ff003c;
+  color: #00ff88;
   text-align: center;
   animation: flicker 1.5s infinite alternate;
   text-shadow:
-    0 0 5px #ff003c,
-    0 0 10px #ff003c,
-    0 0 20px #ff003c,
-    0 0 40px #ff003c,
-    0 0 80px #ff003c;
+    0 0 3px #00ff88,
+    0 0 6px #00ff88,
+    0 0 10px #00ff88,
+    0 0 20px #00ff88;
 }
 
 @keyframes flicker {
   0%,19%,21%,23%,25%,54%,56%,100% {opacity:1;}
-  20%,22%,24%,55% {opacity:0.3;}
+  20%,22%,24%,55% {opacity:0.4;}
 }
 
 /* Nav */
 nav { text-align:center; margin-bottom:30px; }
 nav a { color:#00ffcc; text-decoration:none; margin:0 15px; font-weight:bold; transition:0.3s; }
-nav a:hover { color:#ff003c; }
+nav a:hover { color:#ff8800; }
 
 /* Sections */
 section { max-width:1000px; margin:auto; padding:40px 20px; }
-h2 { color:#ff003c; border-bottom:1px solid #ff003c; padding-bottom:10px; }
+h2 { color:#00ff88; border-bottom:1px solid #00ff88; padding-bottom:10px; }
 
 /* Grid & Card */
 .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; margin-top:20px; }
-.card { background:#111827; padding:20px; border-radius:15px; border:1px solid #ff003c; box-shadow:0 0 15px #ff003c33; transition:0.3s; }
-.card:hover { transform:scale(1.05); box-shadow:0 0 25px #ff003c; }
+.card { background:#111827; padding:20px; border-radius:15px; border:1px solid #00ff88; box-shadow:0 0 15px #00ff8833; transition:0.3s; }
+.card:hover { transform:scale(1.05); box-shadow:0 0 25px #00ff88; }
+
+/* Card links */
+.card a { color: inherit; text-decoration:none; display:block; height:100%; }
+.card a:hover { transform:scale(1.05); }
 
 /* Badge */
 .badge { display:inline-block; padding:5px 10px; border-radius:20px; font-size:12px; margin-bottom:10px; }
