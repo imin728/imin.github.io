@@ -26,9 +26,9 @@
   <h2>📊 Stats</h2>
   <div class="grid">
     <div class="card"><div class="counter" data-target="43">0</div>Challenges Solved</div>
-    <div class="card"><div class="counter" data-target="2">0</div>Labs Completed</div>
+    <div class="card"><div class="counter" data-target="5">0</div>Labs Completed</div>
     <div class="card"><div class="counter" data-target="100">0</div>% Easy CTF</div>
-    <div class="card"><div class="counter" data-target="5">0</div>Certificates</div>
+    <div class="card"><div class="counter" data-target="6">0</div>Certificates</div>
   </div>
 </section>
 
@@ -38,20 +38,14 @@
     <div class="card">
       <span class="badge easy">EASY</span>
       <h3>Threat Intelligence</h3>
-      <p>OSINT investigation, IOC extraction, log analysis</p>
+      <p>OSINT investigation & IOC extraction</p>
       <p>Command: <code>whoami</code></p>
     </div>
     <div class="card">
       <span class="badge medium">MEDIUM</span>
       <h3>SIEM Analysis</h3>
-      <p>Log investigation using Splunk & Security Onion</p>
+      <p>Log investigation using Splunk</p>
       <p>Command: <code>grep -i error /var/log/syslog</code></p>
-    </div>
-    <div class="card">
-      <span class="badge hard">HARD</span>
-      <h3>Web Exploitation</h3>
-      <p>SQLi & XSS vulnerabilities</p>
-      <p>Command: <code>sqlmap -u target --dump</code></p>
     </div>
   </div>
 </section>
@@ -59,18 +53,26 @@
 <section id="labs">
   <h2>🧪 Labs Completed</h2>
   <div class="grid">
+
+    <!-- Lab 1 -->
     <div class="card">
       <h3>CyberDefenders Lab 1</h3>
-      <p>Digital Forensics Investigation: Disk & memory analysis</p>
+      <p>Click sub-bidang untuk detail</p>
+      <ul>
+        <li><a href="labs/lab1_network.html">Network Forensics (Easy)</a></li>
+        <li><a href="labs/lab1_malware.html">Malware Analysis (Medium)</a></li>
+        <li><a href="labs/lab1_threat.html">Threat Intelligence (Hard)</a></li>
+      </ul>
     </div>
+
+    <!-- Lab 2 -->
     <div class="card">
       <h3>CyberDefenders Lab 2</h3>
-      <p>Incident Response: Network & malware analysis</p>
+      <ul>
+        <li><a href="labs/lab2_network.html">Network Forensics (Medium)</a></li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>CyberDefenders Lab 3</h3>
-      <p>Threat Hunting using SIEM logs</p>
-    </div>
+
   </div>
 </section>
 
